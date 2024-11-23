@@ -1,45 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Galeria Interativa</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Renove - Brechó</title>
+    <style>
+        body {
+            background-color: #2d8f46; /* Cor verde de fundo */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .button {
+            background-color: #ffcc00;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #ffb300;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f6d32;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Galeria de Imagens Interativa</h1>
-        <p>Click nas imagens para ampliá-las!</p>
+        <h1>Renove Brechó</h1>
     </header>
-    
-    <main>
-        <div class="gallery">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300" alt="Imagem 1" class="thumbnail" onclick="openModal(this)">
-            </div>
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300" alt="Imagem 2" class="thumbnail" onclick="openModal(this)">
-            </div>
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300" alt="Imagem 3" class="thumbnail" onclick="openModal(this)">
-            </div>
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300" alt="Imagem 4" class="thumbnail" onclick="openModal(this)">
-            </div>
-        </div>
-    </main>
 
-    <!-- Modal (lightbox) -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img id="modalImage" src="" alt="Imagem Ampliada">
+    <div class="content">
+        <h2>Por que os brechós são uma boa opção?</h2>
+        <p>Os brechós são uma excelente escolha para quem deseja consumir de forma mais sustentável, além de oferecer produtos únicos, de qualidade e com preços acessíveis. Ao comprar em um brechó, você contribui para a redução de desperdício e apoia a economia circular.</p>
+        
+        <h2>Sobre o Renove</h2>
+        <p>Fundado em 2024, o Renove é um brechó comprometido com a sustentabilidade e a moda consciente. Acreditamos que cada peça tem uma história, e queremos ajudar você a renovar seu guarda-roupa de forma responsável e cheia de estilo.</p>
+
+        <button class="button" onclick="mostrarMensagem()">Saiba mais</button>
     </div>
 
     <footer>
-        <p>Galeria de Imagens &copy; 2024</p>
+        <p>Nos siga nas redes sociais: <strong>@renovebrecho</strong></p>
+        <p>Fundado em 2024</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function mostrarMensagem() {
+            alert("Bem-vindo ao Renove! Fique de olho nas novidades!");
+        }
+    </script>
 </body>
 </html>
