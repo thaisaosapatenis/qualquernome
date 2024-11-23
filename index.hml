@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria Interativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Imagens Interativa</h1>
+        <p>Click nas imagens para ampliá-las!</p>
+    </header>
+    
+    <main>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="Imagem 1" class="thumbnail" onclick="openModal(this)">
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="Imagem 2" class="thumbnail" onclick="openModal(this)">
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="Imagem 3" class="thumbnail" onclick="openModal(this)">
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="Imagem 4" class="thumbnail" onclick="openModal(this)">
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal (lightbox) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Imagem Ampliada">
+    </div>
+
+    <footer>
+        <p>Galeria de Imagens &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
